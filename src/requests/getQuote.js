@@ -4,7 +4,7 @@ const getQuote = async (setQuote) => {
     const response = await axios.get(
         "https://api.kanye.rest/"
     );
-    setQuote(response.data);
+    setQuote(response.data.quote);
 }
 
 export default getQuote;
