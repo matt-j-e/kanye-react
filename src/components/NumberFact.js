@@ -14,10 +14,11 @@ const NumberFact = ({ quote }) => {
     }, [quote])
 
     return (
-        <div>
-        <p>This quote contains {letterCount} letters in {wordCount} words.</p>
-        <p>{letterCount} x {wordCount} = {letterCount * wordCount}</p>
-        <p>{factString}</p>
+        <div className="number-fact">
+            <h2>Number Fact</h2>
+            <p>This quote contains {letterCount} letters in {wordCount} words.</p>
+            <p>{letterCount} x {wordCount} = {letterCount * wordCount}</p>
+            <p><strong>{factString}</strong></p>
         </div>
     )
 }
